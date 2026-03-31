@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-cream: #f9f9f7;
+  --color-robot-yellow: #ffcf33;
+  --color-text-main: #45370a;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text-main);
+}
+
+.nav-header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #eeeeeb;
+}
+
+/* Dropdown */
+.dropdown { position: relative; height: 100%; display: flex; align-items: center; }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 240px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border: 1px solid #f0f0eb;
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 100;
+}
+.dropdown:hover .dropdown-content { display: block; animation: slideUp 0.2s ease-out; }
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Robot Logo Animation */
+.robot-logo {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes wave {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 400px; }
+}
+.animate-wave {
+  animation: wave 4s linear infinite;
+}
+
+/* Tool Card */
+.tool-card {
+  background: white;
+  border: 1px solid #eeeeeb;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.tool-card:hover {
+  border-color: rgba(255, 207, 51, 0.4);
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(255, 207, 51, 0.05);
+}
