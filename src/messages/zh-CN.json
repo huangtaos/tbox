@@ -1,0 +1,163 @@
+{
+  "common": {
+    "backToHome": "返回主页",
+    "processing": "处理中...",
+    "copy": "复制",
+    "copied": "已复制",
+    "clear": "清空",
+    "submit": "提交",
+    "cancel": "取消",
+    "error": "错误",
+    "success": "成功"
+  },
+  "nav": {
+    "title": "tbox",
+    "tagline": "你的全能工具箱",
+    "searchPlaceholder": "搜索工具...",
+    "feedback": "反馈建议"
+  },
+  "home": {
+    "subtitle": "简洁高效的在线工具集合，为开发者和日常使用提供便捷服务",
+    "categories": {
+      "efficiency": "效率工具",
+      "daily": "日常工具",
+      "developer": "开发者工具",
+      "document": "文档处理工具",
+      "translation": "翻译工具"
+    }
+  },
+  "tools": {
+    "pomodoro": {
+      "name": "番茄时间",
+      "desc": "专注工作，高效休息"
+    },
+    "todo": {
+      "name": "待办事项",
+      "desc": "管理每日任务，提高效率"
+    },
+    "water-tracker": {
+      "name": "饮水追踪",
+      "desc": "记录每日饮水量"
+    },
+    "calculator": {
+      "name": "计算器",
+      "desc": "简单易用的在线计算器"
+    },
+    "unit-converter": {
+      "name": "单位换算",
+      "desc": "长度、面积、重量等单位转换"
+    },
+    "json-formatter": {
+      "name": "JSON 格式化",
+      "desc": "JSON 校验、格式化与压缩"
+    },
+    "timestamp-converter": {
+      "name": "时间戳转换",
+      "desc": "Unix 时间戳与日期互转"
+    },
+    "base64-converter": {
+      "name": "Base64 编解码",
+      "desc": "文本与 Base64 互转"
+    },
+    "md5-hash": {
+      "name": "MD5 哈希",
+      "desc": "生成字符串的 MD5 值"
+    },
+    "url-encoder": {
+      "name": "URL 编解码",
+      "desc": "URL 安全编码与解码"
+    },
+    "uuid-generator": {
+      "name": "UUID 生成",
+      "desc": "生成随机 UUID (v4)"
+    },
+    "qr-generator": {
+      "name": "二维码生成",
+      "desc": "文本或链接转二维码"
+    },
+    "password-generator": {
+      "name": "密码生成器",
+      "desc": "生成强密码"
+    },
+    "pdf-to-word": {
+      "name": "PDF 转 Word",
+      "desc": "将 PDF 文件转换为 Word 文档"
+    },
+    "word-to-pdf": {
+      "name": "Word 转 PDF",
+      "desc": "将 Word 文档转换为 PDF 文件"
+    },
+    "markdown-preview": {
+      "name": "Markdown 预览",
+      "desc": "实时预览 Markdown 渲染效果"
+    },
+    "word-count": {
+      "name": "字数统计",
+      "desc": "统计文本字数、行数、字符数"
+    },
+    "translator": {
+      "name": "翻译工具",
+      "desc": "中英文互译"
+    },
+    "file-encrypt": {
+      "name": "文件加密",
+      "desc": "安全加密你的文件"
+    },
+    "file-compress": {
+      "name": "文件压缩",
+      "desc": "减小文件体积"
+    },
+    "image-compress": {
+      "name": "图片压缩",
+      "desc": "无损压缩图片"
+    }
+  },
+  "jsonFormatter": {
+    "inputPlaceholder": "在此输入需要格式化的 JSON...",
+    "outputLabel": "格式化结果",
+    "inputLabel": "输入 JSON"
+  },
+  "md5Hash": {
+    "title": "哈希计算器",
+    "desc": "生成字符串的 MD5 / SHA-256 哈希值",
+    "sha256Tab": "SHA-256（推荐）",
+    "md5Tab": "MD5（已淘汰）",
+    "inputPlaceholder": "在此输入需要计算哈希的文本...",
+    "sha256Warning": "MD5 存在碰撞攻击风险，不适用于密码存储或安全场景。仅推荐用于普通数据完整性校验。",
+    "sha256Recommend": "推荐",
+    "deprecated": "已淘汰",
+    "lower32": "32位小写",
+    "upper32": "32位大写",
+    "lower16": "16位小写",
+    "upper16": "16位大写",
+    "lower64": "64位小写",
+    "upper64": "64位大写",
+    "waiting": "等待输入..."
+  },
+  "base64Converter": {
+    "encodeTab": "编码",
+    "decodeTab": "解码",
+    "inputPlaceholder": "输入文本...",
+    "outputPlaceholder": "转换结果..."
+  },
+  "wordToPdf": {
+    "title": "Word 转 PDF",
+    "desc": "将 .docx 文档快速转换为 PDF 格式",
+    "dropzone": "点击或拖拽 Word 文件到这里",
+    "dropzoneHint": "支持 .docx 格式",
+    "changeFile": "点击更换文件",
+    "convert": "开始转换",
+    "converting": "转换中...",
+    "success": "转换成功",
+    "successMsg": "文件已成功转换并开始下载！",
+    "error": "转换失败，请确保文件格式正确。",
+    "hint": "使用说明",
+    "hint1": "目前仅支持 .docx 格式的 Word 文档。",
+    "hint2": "转换过程在浏览器本地完成，您的文件不会被上传到任何服务器，确保隐私安全。",
+    "hint3": "复杂的排版（如表格、特殊字体）在转换后可能会有细微差异。"
+  },
+  "comingSoon": {
+    "title": "即将推出",
+    "desc": "这个工具正在开发中，敬请期待！"
+  }
+}

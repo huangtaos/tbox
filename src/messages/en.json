@@ -1,0 +1,163 @@
+{
+  "common": {
+    "backToHome": "Back to Home",
+    "processing": "Processing...",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "title": "tbox",
+    "tagline": "Your All-in-One Toolkit",
+    "searchPlaceholder": "Search tools...",
+    "feedback": "Feedback"
+  },
+  "home": {
+    "subtitle": "A clean and efficient collection of online tools for developers and everyday use",
+    "categories": {
+      "efficiency": "Productivity Tools",
+      "daily": "Daily Tools",
+      "developer": "Developer Tools",
+      "document": "Document Tools",
+      "translation": "Translation Tools"
+    }
+  },
+  "tools": {
+    "pomodoro": {
+      "name": "Pomodoro Timer",
+      "desc": "Focus on work, rest efficiently"
+    },
+    "todo": {
+      "name": "To-Do List",
+      "desc": "Manage daily tasks and boost productivity"
+    },
+    "water-tracker": {
+      "name": "Water Tracker",
+      "desc": "Track your daily water intake"
+    },
+    "calculator": {
+      "name": "Calculator",
+      "desc": "Simple and easy-to-use online calculator"
+    },
+    "unit-converter": {
+      "name": "Unit Converter",
+      "desc": "Length, area, weight and other unit conversions"
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "desc": "JSON validation, formatting and compression"
+    },
+    "timestamp-converter": {
+      "name": "Timestamp Converter",
+      "desc": "Convert between Unix timestamps and dates"
+    },
+    "base64-converter": {
+      "name": "Base64 Encoder/Decoder",
+      "desc": "Encode and decode Base64 strings"
+    },
+    "md5-hash": {
+      "name": "MD5 Hash",
+      "desc": "Generate MD5 hash of a string"
+    },
+    "url-encoder": {
+      "name": "URL Encoder",
+      "desc": "URL-safe encoding and decoding"
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "desc": "Generate random UUID (v4)"
+    },
+    "qr-generator": {
+      "name": "QR Code Generator",
+      "desc": "Convert text or links to QR codes"
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "desc": "Generate strong passwords"
+    },
+    "pdf-to-word": {
+      "name": "PDF to Word",
+      "desc": "Convert PDF files to Word documents"
+    },
+    "word-to-pdf": {
+      "name": "Word to PDF",
+      "desc": "Convert Word documents to PDF files"
+    },
+    "markdown-preview": {
+      "name": "Markdown Preview",
+      "desc": "Real-time Markdown rendering preview"
+    },
+    "word-count": {
+      "name": "Word Counter",
+      "desc": "Count words, lines, and characters in text"
+    },
+    "translator": {
+      "name": "Translator",
+      "desc": "Chinese-English translation"
+    },
+    "file-encrypt": {
+      "name": "File Encryption",
+      "desc": "Securely encrypt your files"
+    },
+    "file-compress": {
+      "name": "File Compression",
+      "desc": "Reduce file size"
+    },
+    "image-compress": {
+      "name": "Image Compression",
+      "desc": "Lossless image compression"
+    }
+  },
+  "jsonFormatter": {
+    "inputPlaceholder": "Enter JSON to format...",
+    "outputLabel": "Formatted Result",
+    "inputLabel": "Input JSON"
+  },
+  "md5Hash": {
+    "title": "Hash Calculator",
+    "desc": "Generate MD5 / SHA-256 hash of a string",
+    "sha256Tab": "SHA-256 (Recommended)",
+    "md5Tab": "MD5 (Deprecated)",
+    "inputPlaceholder": "Enter text to hash...",
+    "sha256Warning": "MD5 is vulnerable to collision attacks and should not be used for password storage or security purposes. Only use for general data integrity verification.",
+    "sha256Recommend": "Recommended",
+    "deprecated": "Deprecated",
+    "lower32": "32-bit Lowercase",
+    "upper32": "32-bit Uppercase",
+    "lower16": "16-bit Lowercase",
+    "upper16": "16-bit Uppercase",
+    "lower64": "64-bit Lowercase",
+    "upper64": "64-bit Uppercase",
+    "waiting": "Waiting for input..."
+  },
+  "base64Converter": {
+    "encodeTab": "Encode",
+    "decodeTab": "Decode",
+    "inputPlaceholder": "Enter text...",
+    "outputPlaceholder": "Result..."
+  },
+  "wordToPdf": {
+    "title": "Word to PDF",
+    "desc": "Convert .docx documents to PDF format",
+    "dropzone": "Click or drag Word file here",
+    "dropzoneHint": "Supports .docx format",
+    "changeFile": "Click to change file",
+    "convert": "Start Conversion",
+    "converting": "Converting...",
+    "success": "Success",
+    "successMsg": "File converted successfully and download started!",
+    "error": "Conversion failed. Please ensure the file format is correct.",
+    "hint": "Usage Notes",
+    "hint1": "Currently only supports .docx format Word documents.",
+    "hint2": "Conversion is done locally in your browser. Your files are never uploaded to any server, ensuring privacy.",
+    "hint3": "Complex layouts (such as tables, special fonts) may have slight differences after conversion."
+  },
+  "comingSoon": {
+    "title": "Coming Soon",
+    "desc": "This tool is under development. Stay tuned!"
+  }
+}

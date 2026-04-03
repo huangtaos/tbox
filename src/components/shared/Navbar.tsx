@@ -3,11 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useApp } from '@/context/AppContext';
-import { 
-  ChevronDown, Calculator, Ruler, Timer, Droplets, 
-  Braces, Hash, Binary, Lock, Link as LinkIcon, Fingerprint, 
+import {
+  ChevronDown, Calculator, Ruler, Timer, Droplets, ListTodo,
+  Braces, Hash, Binary, Lock, Link as LinkIcon, Fingerprint,
   QrCode, Key, FileText, FileCode, FileType, Search, User,
-  Languages, FileUp, FileDown, FilePen
+  Languages, FileUp, FileDown, FilePen, Image
 } from 'lucide-react';
 
 interface NavbarProps {
@@ -48,10 +48,22 @@ export default function Navbar({ currentView, onOpenSearch }: NavbarProps) {
             </Link>
             
             <div className="dropdown group">
-              <button className={`px-4 text-sm font-semibold flex items-center h-full transition-colors cursor-pointer ${['calculator', 'unit-converter', 'focus-timer', 'water-tracker'].includes(currentView) ? 'text-gray-900 border-b-2 border-[#ffcf33]' : 'text-gray-500 hover:text-gray-900'}`}>
-                日常工具 <ChevronDown className="ml-1.5 w-4 h-4 transition-transform group-hover:rotate-180" />
+              <button className={`px-4 text-sm font-semibold flex items-center h-full transition-colors cursor-pointer ${['pomodoro', 'todo', 'water-tracker', 'calculator', 'unit-converter'].includes(currentView) ? 'text-gray-900 border-b-2 border-[#ffcf33]' : 'text-gray-500 hover:text-gray-900'}`}>
+                效率工具 <ChevronDown className="ml-1.5 w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="dropdown-content">
+                <Link href="/tools/pomodoro" className="w-full flex items-center p-3 hover:bg-red-50 rounded-xl transition group/item cursor-pointer">
+                  <Timer className="w-4 h-4 mr-3.5 text-red-500 transition-colors group-hover/item:text-red-600" />
+                  <span className="text-sm font-bold text-gray-800">番茄时间</span>
+                </Link>
+                <Link href="/tools/todo" className="w-full flex items-center p-3 hover:bg-blue-50 rounded-xl transition group/item cursor-pointer">
+                  <ListTodo className="w-4 h-4 mr-3.5 text-blue-500 transition-colors group-hover/item:text-blue-600" />
+                  <span className="text-sm font-bold text-gray-800">待办事项</span>
+                </Link>
+                <Link href="/tools/water-tracker" className="w-full flex items-center p-3 hover:bg-cyan-50 rounded-xl transition group/item cursor-pointer">
+                  <Droplets className="w-4 h-4 mr-3.5 text-cyan-500 transition-colors group-hover/item:text-cyan-600" />
+                  <span className="text-sm font-bold text-gray-800">饮水追踪</span>
+                </Link>
                 <Link href="/tools/calculator" className="w-full flex items-center p-3 hover:bg-amber-50 rounded-xl transition group/item cursor-pointer">
                   <Calculator className="w-4 h-4 mr-3.5 text-amber-500 transition-colors group-hover/item:text-amber-600" />
                   <span className="text-sm font-bold text-gray-800">计算器</span>
@@ -104,7 +116,7 @@ export default function Navbar({ currentView, onOpenSearch }: NavbarProps) {
             </div>
 
             <div className="dropdown group">
-              <button className={`px-4 text-sm font-semibold flex items-center h-full transition-colors cursor-pointer ${['pdf-to-word', 'word-to-pdf', 'markdown-preview', 'word-count', 'file-encrypt', 'file-compress', 'image-compress'].includes(currentView) ? 'text-gray-900 border-b-2 border-[#ffcf33]' : 'text-gray-500 hover:text-gray-900'}`}>
+              <button className={`px-4 text-sm font-semibold flex items-center h-full transition-colors cursor-pointer ${['pdf-to-word', 'word-to-pdf', 'markdown-preview', 'word-count', 'file-encrypt', 'file-compress'].includes(currentView) ? 'text-gray-900 border-b-2 border-[#ffcf33]' : 'text-gray-500 hover:text-gray-900'}`}>
                 文档处理工具 <ChevronDown className="ml-1.5 w-4 h-4 transition-transform group-hover:rotate-180" />
               </button>
               <div className="dropdown-content">
@@ -132,9 +144,21 @@ export default function Navbar({ currentView, onOpenSearch }: NavbarProps) {
                   <FileDown className="w-4 h-4 mr-3.5 text-slate-500 transition-colors group-hover/item:text-slate-600" />
                   <span className="text-sm font-bold text-gray-800">文件压缩</span>
                 </Link>
+              </div>
+            </div>
+
+            <div className="dropdown group">
+              <button className={`px-4 text-sm font-semibold flex items-center h-full transition-colors cursor-pointer ${['image-compress', 'change-photo-background'].includes(currentView) ? 'text-gray-900 border-b-2 border-[#ffcf33]' : 'text-gray-500 hover:text-gray-900'}`}>
+                图片处理工具 <ChevronDown className="ml-1.5 w-4 h-4 transition-transform group-hover:rotate-180" />
+              </button>
+              <div className="dropdown-content">
                 <Link href="/tools/image-compress" className="w-full flex items-center p-3 hover:bg-slate-50 rounded-xl transition group/item cursor-pointer">
                   <FilePen className="w-4 h-4 mr-3.5 text-slate-500 transition-colors group-hover/item:text-slate-600" />
                   <span className="text-sm font-bold text-gray-800">图片压缩</span>
+                </Link>
+                <Link href="/tools/change-photo-background" className="w-full flex items-center p-3 hover:bg-teal-50 rounded-xl transition group/item cursor-pointer">
+                  <Image className="w-4 h-4 mr-3.5 text-teal-500 transition-colors group-hover/item:text-teal-600" />
+                  <span className="text-sm font-bold text-gray-800">证件照换底色</span>
                 </Link>
               </div>
             </div>
